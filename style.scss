@@ -33,10 +33,37 @@ html {
   margin: 5rem 3rem;
   padding: 3rem;
   border-radius: 1.5rem;
-  width: 50rem;
-  .img-area img {
-    max-width: 100%;
+  width: 40rem;
+  .img-area {
+    background-image: url(image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35rem;
+    width: 100%;
     border-radius: 1rem;
+
+    .view-image {
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 247, 255, 0.495);
+      border-radius: inherit;
+      transition: all 0.2s;
+      cursor: pointer;
+      img {
+        margin-top: 14.5rem;
+        width: 20%;
+        height: 20%;
+      }
+    }
+    &:hover .view-image {
+      opacity: 1;
+      transition: all 0.2s;
+    }
   }
 
   .text-area {
